@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app_flutter/constants/colors.dart';
 import 'package:food_delivery_app_flutter/modals/restaurant.dart';
 import 'package:food_delivery_app_flutter/screens/home/widget/food_list.dart';
+import 'package:food_delivery_app_flutter/screens/home/widget/food_list_view.dart';
 import 'package:food_delivery_app_flutter/screens/home/widget/restaurant_info.dart';
 import 'package:food_delivery_app_flutter/widgets/custom_app_bar.dart';
 
@@ -14,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var selected = 0;
+  final pageController = PageController();
   final restaurant = Restaurant.generateRestaurant();
 
   @override
@@ -35,9 +37,19 @@ class _HomePageState extends State<HomePage> {
               setState(() {
                 selected = index;
               });
+              pageController.jumpToPage(index);
             },
             restaurant,
-          )
+          ),
+          Expanded(
+              child: FoodListView(
+            selected,
+            (int index) {
+              setState(() {});
+            },
+            pageController,
+            restaurant,
+          ))
         ],
       ),
     );
