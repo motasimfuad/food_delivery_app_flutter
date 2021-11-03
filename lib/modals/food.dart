@@ -29,7 +29,7 @@ class Food {
       Food(
         'assets/images/dish1.png',
         'No1. in Sales',
-        'Soba Soup',
+        'Soba Soup With Shrimp and Greens',
         '50 min',
         4.8,
         '325 kcal',
@@ -77,10 +77,63 @@ class Food {
         'Simply put, ramen is a Japanese noodle soup.',
         highLight: true,
       ),
+      Food(
+        'assets/images/dish3.png',
+        'Low Fat',
+        'Pasta',
+        '1 hr',
+        4.4,
+        '1200 kcal',
+        34,
+        3,
+        [
+          {
+            'Noodle': 'assets/images/ingre1.png',
+          },
+          {
+            'Shrimp': 'assets/images/ingr2.png',
+          },
+          {
+            'Egg': 'assets/images/ingre3.png',
+          },
+          {
+            'Scallion': 'assets/images/ingre4.png',
+          },
+        ],
+        'Simply put, ramen is a Japanese noodle soup.',
+        highLight: false,
+      ),
     ];
   }
 
   static List<Food> generatePopularFoods() {
-    return [];
+    return [
+      Food(
+        'assets/images/dish3.png',
+        'Low Fat',
+        'Pasta',
+        '1 hr',
+        4.4,
+        '1200 kcal',
+        34,
+        3,
+        [
+          {
+            'Noodle': 'assets/images/ingre1.png',
+          },
+          {
+            'Shrimp': 'assets/images/ingr2.png',
+          },
+          {
+            'Egg': 'assets/images/ingre3.png',
+          },
+          {
+            'Scallion': 'assets/images/ingre4.png',
+          },
+        ],
+        'Simply put, ramen is a Japanese noodle soup.',
+        highLight: false,
+      ),
+    ];
   }
 }
