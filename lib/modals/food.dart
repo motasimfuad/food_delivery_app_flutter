@@ -40,7 +40,7 @@ class Food {
             'Noodle': 'assets/images/ingre1.png',
           },
           {
-            'Shrimp': 'assets/images/ingr2.png',
+            'Shrimp': 'assets/images/ingre2.png',
           },
           {
             'Egg': 'assets/images/ingre3.png',
@@ -49,7 +49,7 @@ class Food {
             'Scallion': 'assets/images/ingre4.png',
           },
         ],
-        'Simply put, ramen is a Japanese noodle soup.',
+        'Simply put, ramen is a Japanese noodle soup. Open the Google Chrome Console by pressing F12 key. Select Application in the console\'s top menu. Select. Local Storage in the console\'s left menu. Right click your site(s) and click clear to delete the local storage.',
       ),
       Food(
         'assets/images/dish2.png',
@@ -65,7 +65,7 @@ class Food {
             'Noodle': 'assets/images/ingre1.png',
           },
           {
-            'Shrimp': 'assets/images/ingr2.png',
+            'Shrimp': 'assets/images/ingre2.png',
           },
           {
             'Egg': 'assets/images/ingre3.png',
@@ -74,7 +74,7 @@ class Food {
             'Scallion': 'assets/images/ingre4.png',
           },
         ],
-        'Simply put, ramen is a Japanese noodle soup.',
+        'Simply put, ramen is a Japanese noodle soup. Open the Google Chrome Console by pressing F12 key. Select Application in the console\'s top menu. Select. Local Storage in the console\'s left menu. Right click your site(s) and click clear to delete the local storage.',
         highLight: true,
       ),
       Food(
@@ -91,7 +91,7 @@ class Food {
             'Noodle': 'assets/images/ingre1.png',
           },
           {
-            'Shrimp': 'assets/images/ingr2.png',
+            'Shrimp': 'assets/images/ingre2.png',
           },
           {
             'Egg': 'assets/images/ingre3.png',
@@ -100,7 +100,7 @@ class Food {
             'Scallion': 'assets/images/ingre4.png',
           },
         ],
-        'Simply put, ramen is a Japanese noodle soup.',
+        'Simply put, ramen is a Japanese noodle soup. Open the Google Chrome Console by pressing F12 key. Select Application in the console\'s top menu. Select. Local Storage in the console\'s left menu. Right click your site(s) and click clear to delete the local storage.',
         highLight: false,
       ),
     ];
@@ -122,7 +122,7 @@ class Food {
             'Noodle': 'assets/images/ingre1.png',
           },
           {
-            'Shrimp': 'assets/images/ingr2.png',
+            'Shrimp': 'assets/images/ingre2.png',
           },
           {
             'Egg': 'assets/images/ingre3.png',
@@ -131,7 +131,7 @@ class Food {
             'Scallion': 'assets/images/ingre4.png',
           },
         ],
-        'Simply put, ramen is a Japanese noodle soup.',
+        'Simply put, ramen is a Japanese noodle soup. Open the Google Chrome Console by pressing F12 key. Select Application in the console\'s top menu. Select. Local Storage in the console\'s left menu. Right click your site(s) and click clear to delete the local storage.',
         highLight: false,
       ),
     ];

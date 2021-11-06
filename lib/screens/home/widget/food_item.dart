@@ -31,7 +31,7 @@ class FoodItem extends StatelessWidget {
           Expanded(
             child: Container(
               padding: const EdgeInsets.only(
-                top: 20,
+                top: 10,
                 left: 10,
                 right: 10,
               ),
@@ -41,12 +41,14 @@ class FoodItem extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        food.name,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          height: 1.5,
+                      Expanded(
+                        child: Text(
+                          food.name,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            height: 1.5,
+                          ),
                         ),
                       ),
                       const Icon(

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_flutter/constants/colors.dart';
 import 'package:food_delivery_app_flutter/modals/food.dart';
@@ -25,6 +26,45 @@ class DetailPage extends StatelessWidget {
             FoodImg(food),
             FoodDetail(food)
           ],
+        ),
+      ),
+      floatingActionButton: Container(
+        width: 100,
+        height: 56,
+        child: RawMaterialButton(
+          padding: EdgeInsets.only(
+            left: 10,
+          ),
+          elevation: 2,
+          fillColor: kPrimary,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          onPressed: () {},
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(
+                Icons.shopping_cart_outlined,
+                color: Colors.black,
+                size: 30,
+              ),
+              Container(
+                padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Text(
+                  food.quantity.toString(),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

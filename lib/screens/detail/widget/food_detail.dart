@@ -45,6 +45,70 @@ class FoodDetail extends StatelessWidget {
           ),
           SizedBox(height: 30),
           FoodQuantity(food),
+          SizedBox(height: 30),
+          Row(
+            children: [
+              Text(
+                'Ingredients',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              )
+            ],
+          ),
+          SizedBox(height: 10),
+          // ingredients list
+          Container(
+            height: 100,
+            child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) => Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(40),
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            food.ingredients[index].values.first,
+                            height: 52,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            food.ingredients[index].keys.first,
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                separatorBuilder: (_, index) => SizedBox(width: 10),
+                itemCount: food.ingredients.length),
+          ),
+          SizedBox(height: 30),
+          Row(
+            children: [
+              Text(
+                'About',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              )
+            ],
+          ),
+          SizedBox(height: 10),
+          Text(
+            food.about,
+            style: TextStyle(
+              fontSize: 16,
+              wordSpacing: 1.2,
+            ),
+          ),
         ],
       ),
     );
